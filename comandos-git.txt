@@ -1,0 +1,104 @@
+
+
+Explicación de los comandos:
+
+
+    1. pwd: Muestra el directorio actual en el que te encuentras trabajando.
+    Es útil para saber dónde estás en la estructura de directorios.
+
+    2. cd <directorio>: Cambia el directorio actual al especificado. Es fundamental
+    para moverte dentro de la estructura de carpetas en tu sistema de archivos.
+
+    3. git clone <URL de repositorio de GitHub>: Clona un repositorio Git desde
+    una URL remota (GitHub) hacia tu máquina local. Es importante para obtener
+    una copia local de un repositorio remoto.
+
+    4. git add <archivo>: Agrega cambios en archivos específicos al área de preparación
+    (staging area) para ser incluidos en el próximo commit. Es crucial para preparar los
+    cambios que deseas incluir en tu historial de versiones.
+
+    5. git commit -m "mensaje": Crea un nuevo commit con los cambios que están en el
+    área de preparación, junto con un mensaje que describe los cambios realizados en
+    el commit. Es esencial para guardar tus cambios de forma permanente en la historia
+    del repositorio con una breve descripción, para poder localizarlos fácilmente.
+
+    6. git status: Muestra el estado actual de tu directorio de trabajo y del área de
+    preparación. Es útil para ver qué cambios están pendientes de ser confirmados o
+    agregados al área de preparación.
+
+    7. git push origin <rama>: Envía los commits locales de una rama específica al
+    repositorio remoto (GitHub). Es importante para mantener una copia de seguridad
+    en el servidor remoto o, en caso de colaborar con otros programadores, para compartir
+    tus cambios con los otros colaboradores. 
+
+    8. git checkout <rama>: Cambia de rama en tu repositorio local. Es útil para alternar
+    entre diferentes ramas de desarrollo en tu proyecto.
+
+    9. git checkout -b <rama>: Crea una nueva rama y cambia a ella al mismo tiempo. Es
+    importante para comenzar a trabajar en una nueva funcionalidad o tarea de forma
+    aislada.
+
+    10. git merge <rama>: Fusiona los cambios de una rama específica en la rama actual.
+    Es fundamental para combinar el trabajo realizado en diferentes ramas en un solo
+    conjunto de cambios.
+
+    11. git stash: Guarda temporalmente los cambios locales sin comprometerlos en un
+    commit. Es útil cuando necesitas cambiar de rama o aplicar cambios, pero no deseas
+    hacer commit de tus cambios actuales.
+
+    12. git stash pop: Recupera los cambios guardados temporalmente con "git stash" y
+    los aplica al directorio de trabajo actual. Es útil para restaurar los cambios que
+    guardaste temporalmente.
+
+    13. gitk --all: Abre la interfaz gráfica Gitk, que proporciona una visualización
+    gráfica de la historia del repositorio. Es útil para tener una vista más visual de
+    la historia y los cambios en el repositorio.
+
+
+
+He aquí TODOS los comandos utilizados de manera ordenada para la actividad 1 individual:
+
+    pwd
+    cd C:\Users\ainho\Documents\MisRepositorios
+    git clone https://github.com/ainhoapergon/umafactorial.git
+    git add factorial.java
+    git status
+    git commit -m "implementacion initial"
+    git add factorial.java
+    git commit m- "refactorizacion"
+    git push origin main
+    git checkout -b recursivo
+    git add factorial.java
+    git commit -m "implementacion recursiva"
+    git push origin recursivo
+    git checkout main
+    git add factorial.java
+    git commit -m "correccion numeros negativos"
+    git push origin main
+    git checkout recursivo
+    git add factorial.java
+    git commit -m "optimizacion"
+    git checkout main
+    git merge recursivo
+    gitk -all
+    git checkout -b refacIO
+    git add factorial.java
+    git commit -m "refactorizacion de metodo de entrada"
+    gitk -all
+    git stash
+    git checkout main
+    git add factorial.java
+    git commit -m "cambio de long a BigInteger"
+    git push origin main
+    git checkout refacIO
+    git stash pop
+    git add factorial.java
+    git commit -m "refactorizacion de metodo de salida"
+    git checkout main
+    git merge refacIO
+    git add factorial.java
+    git commit -m "mezcla de rama refacIO"
+    git push origin main
+    git add comandos-git.txt
+    git commit -m "adicion de historial de linea de comandos"
+    git push --all origin
