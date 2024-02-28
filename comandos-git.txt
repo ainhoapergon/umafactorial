@@ -58,47 +58,96 @@ Explicación de los comandos:
 
 He aquí TODOS los comandos utilizados de manera ordenada para la actividad 1 individual:
 
-    pwd
-    cd C:\Users\ainho\Documents\MisRepositorios
-    git clone https://github.com/ainhoapergon/umafactorial.git
-    git add factorial.java
-    git status
-    git commit -m "implementacion initial"
-    git add factorial.java
-    git commit m- "refactorizacion"
-    git push origin main
-    git checkout -b recursivo
-    git add factorial.java
-    git commit -m "implementacion recursiva"
-    git push origin recursivo
-    git checkout main
-    git add factorial.java
-    git commit -m "correccion numeros negativos"
-    git push origin main
-    git checkout recursivo
-    git add factorial.java
-    git commit -m "optimizacion"
-    git checkout main
-    git merge recursivo
-    gitk -all
-    git checkout -b refacIO
-    git add factorial.java
-    git commit -m "refactorizacion de metodo de entrada"
-    gitk -all
-    git stash
-    git checkout main
-    git add factorial.java
-    git commit -m "cambio de long a BigInteger"
-    git push origin main
-    git checkout refacIO
-    git stash pop
-    git add factorial.java
-    git commit -m "refactorizacion de metodo de salida"
-    git checkout main
-    git merge refacIO
-    git add factorial.java
-    git commit -m "mezcla de rama refacIO"
-    git push origin main
-    git add comandos-git.txt
-    git commit -m "adicion de historial de linea de comandos"
-    git push --all origin
+    Item 1:
+        pwd
+        cd C:\Users\ainho\Documents\MisRepositorios
+        git clone https://github.com/ainhoapergon/umafactorial.git
+    
+    Item 2:
+        git checkout main
+        (Creación de factorial.java desde Visual Studio Code)
+
+    Item 3:
+        git add factorial.java
+        git status
+        git commit -m "implementacion initial"
+    
+    Item 4:
+        git add factorial.java
+        git commit m- "refactorizacion"
+    
+    Item 5:
+        git push origin main
+        git checkout -b recursivo
+    
+    Item 6:
+        Modificación del método fact() (no se usaron comandos de git para este item)
+    
+    Item 7:
+        git add factorial.java
+        git commit -m "implementacion recursiva"
+        git push origin recursivo
+    
+    Item 8:
+        git checkout main
+
+    Item 9:
+        Modificación de método main() (no se usaron comandos de git para este item)
+
+    Item 10:
+        git add factorial.java
+        git commit -m "correccion numeros negativos"
+        git push origin main
+
+    Item 11:
+        git checkout recursivo
+        git add factorial.java
+        git commit -m "optimizacion"
+
+    Item 12:
+        git checkout main
+        git merge recursivo
+        gitk -all
+    
+    Item 13:
+        git checkout -b refacIO
+    
+    Item 14:
+        git add factorial.java
+        git commit -m "refactorizacion de metodo de entrada"
+        gitk -all
+
+    Item 15:
+        git stash
+        git checkout main
+    
+    Item 16:
+        git add factorial.java
+        git commit -m "cambio de long a BigInteger"
+        git push origin main
+        git checkout refacIO
+        git stash pop
+        git add factorial.java
+        git commit -m "refactorizacion de metodo de salida"
+
+    Item 17: 
+        git checkout main
+        git merge refacIO
+    
+    Item 18:
+        Resolución de conflictos (no se usaron comandos de git para este item)
+
+    Item 19:
+        git add factorial.java
+        git commit -m "mezcla de rama refacIO"
+        git push origin main
+
+    Item 20:
+        (Creación de comandos-git.txt desde Visual Studio Code).
+    
+    Item 21:
+        git add comandos-git.txt
+        git commit -m "adicion de historial de linea de comandos"
+    
+    Item 22:
+        git push --all origin
